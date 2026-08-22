@@ -117,13 +117,33 @@
             "custom_title": "",
             "custom_link": ""
           }
+        },
+        "custom_collection_nVW3mw": {
+          "type": "custom-collection",
+          "settings": {
+            "number_label": "01",
+            "custom_collection": "",
+            "custom_title": "",
+            "custom_link": ""
+          }
+        },
+        "custom_collection_eBLbBQ": {
+          "type": "custom-collection",
+          "settings": {
+            "number_label": "01",
+            "custom_collection": "",
+            "custom_title": "",
+            "custom_link": ""
+          }
         }
       },
       "block_order": [
         "custom_collection_aaEEm4",
         "custom_collection_WgzaPF",
         "custom_collection_yE4etJ",
-        "custom_collection_wVqdCi"
+        "custom_collection_wVqdCi",
+        "custom_collection_nVW3mw",
+        "custom_collection_eBLbBQ"
       ],
       "name": "Custom Collection Showcase",
       "settings": {
