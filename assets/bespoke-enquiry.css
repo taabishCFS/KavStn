@@ -61,10 +61,8 @@
   font-family: Georgia, 'Times New Roman', serif;
   font-size: clamp(30px, 3vw, 42px);
   line-height: 1.2;
-  color: #f7f4ee;
+  color: var(--heading-color, #f7f4ee);
 }
-
-.bespoke-enquiry__heading-italic {
   font-style: italic;
   opacity: 0.92;
 }
@@ -72,7 +70,7 @@
 .bespoke-enquiry__description {
   font-size: 15px;
   line-height: 1.7;
-  color: #cfc9bc;
+  color: var(--description-color, #cfc9bc);
   max-width: 40ch;
 }
 
@@ -97,14 +95,14 @@
   font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(247, 244, 238, 0.6);
+  color: var(--form-label-color, rgba(247, 244, 238, 0.6));
 }
 
 .bespoke-enquiry__field input,
 .bespoke-enquiry__field textarea {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #f7f4ee;
+  color: var(--form-input-text-color, #f7f4ee);
   font-size: 14px;
   padding: 14px 16px;
   border-radius: 2px;
