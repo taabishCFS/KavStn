@@ -280,7 +280,8 @@
       "type": "bespoke-enquiry",
       "name": "Bespoke Enquiry",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
+        "background_image": "shopify://shop_images/ChatGPT_Image_Aug_21_2026_02_08_04_PM.png",
         "overlay_opacity": 55,
         "eyebrow": "Bespoke Furniture",
         "heading": "The Aurelia, built",
