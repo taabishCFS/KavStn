@@ -1,0 +1,36 @@
+/* =========================================================
+   DISABLE ANIMATIONS — hero banner / slideshow
+   Kills the motion-element entrance effects (zoom-out image
+   scale-in, fade-up text) and the Swiper slide-to-slide
+   transition. Content renders in its final state instantly.
+   Append this block to the END of section-slideshow.css.
+   ========================================================= */
+
+/* 1. Motion-element entrance animations (zoom-out image, fade-up text) */
+.section--slideshow motion-element {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+.section--slideshow motion-element * {
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* 2. Swiper slide-to-slide transition (snap instantly, no slide/fade motion) */
+.section--slideshow .swiper-wrapper {
+  transition-duration: 0ms !important;
+}
+
+.section--slideshow .swiper-slide {
+  transition: none !important;
+}
+
+/* 3. Pagination bullet transition (optional — remove if you want dot animation kept) */
+.section--slideshow .swiper-pagination-bullet {
+  transition: none !important;
+}

@@ -1,0 +1,324 @@
+{{ 'material-explorer.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="material-explorer"
+  id="material-explorer-{{ section.id }}"
+  data-section-id="{{ section.id }}"
+>
+  <div class="material-explorer__inner page-width">
+
+    {%- if section.settings.eyebrow != blank -%}
+      <p class="material-explorer__eyebrow">{{ section.settings.eyebrow }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="material-explorer__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    <div class="material-explorer__layout">
+
+      <!-- LEFT: stone list -->
+      <div class="material-explorer__list" role="tablist" aria-label="Stone options">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'stone' -%}
+            <button
+              type="button"
+              class="material-explorer__list-item{% if forloop.first %} is-active{% endif %}"
+              data-stone-target="stone-{{ forloop.index0 }}-{{ section.id }}"
+              role="tab"
+              aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              <span class="material-explorer__list-item-swatch">
+                {%- if block.settings.btn_thumbnail != blank -%}
+                  <img
+                    src="{{ block.settings.btn_thumbnail | image_url: width: 160 }}"
+                    alt=""
+                    loading="lazy"
+                    width="80"
+                    height="80"
+                  >
+                {%- elsif block.settings.main_image != blank -%}
+                  <img
+                    src="{{ block.settings.main_image | image_url: width: 160 }}"
+                    alt=""
+                    loading="lazy"
+                    width="80"
+                    height="80"
+                  >
+                {%- endif -%}
+              </span>
+
+              <span class="material-explorer__list-item-text">
+                <span class="material-explorer__list-item-name">{{ block.settings.name }}</span>
+                {%- if block.settings.location != blank -%}
+                  <span class="material-explorer__list-item-location">{{ block.settings.location }}</span>
+                {%- endif -%}
+              </span>
+
+              <span class="material-explorer__list-item-indicator">
+                <svg class="material-explorer__icon-check" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg class="material-explorer__icon-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if section.settings.request_samples_text != blank -%}
+          <a
+            href="{{ section.settings.request_samples_link | default: '#' }}"
+            class="material-explorer__request-link"
+          >
+            {{ section.settings.request_samples_text }} &rarr;
+          </a>
+        {%- endif -%}
+      </div>
+
+      <!-- CENTER + RIGHT: panels per stone -->
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'stone' -%}
+          <div
+            class="material-explorer__panel{% if forloop.first %} is-active{% endif %}"
+            id="stone-{{ forloop.index0 }}-{{ section.id }}"
+            data-stone-panel
+            role="tabpanel"
+            {{ block.shopify_attributes }}
+          >
+
+            <div class="material-explorer__image">
+              {%- if block.settings.main_image != blank -%}
+                <img
+                  src="{{ block.settings.main_image | image_url: width: 1200 }}"
+                  alt="{{ block.settings.main_image.alt | default: block.settings.name }}"
+                  loading="lazy"
+                  width="{{ block.settings.main_image.width }}"
+                  height="{{ block.settings.main_image.height }}"
+                >
+              {%- else -%}
+                <div class="material-explorer__image-placeholder"></div>
+              {%- endif -%}
+            </div>
+
+            <div class="material-explorer__details">
+
+              {%- if block.settings.thumbnail != blank -%}
+                <img
+                  class="material-explorer__thumbnail"
+                  src="{{ block.settings.thumbnail | image_url: width: 200 }}"
+                  alt="{{ block.settings.name }}"
+                  loading="lazy"
+                  width="80"
+                  height="80"
+                >
+              {%- elsif block.settings.main_image != blank -%}
+                <img
+                  class="material-explorer__thumbnail"
+                  src="{{ block.settings.main_image | image_url: width: 200 }}"
+                  alt="{{ block.settings.name }}"
+                  loading="lazy"
+                  width="80"
+                  height="80"
+                >
+              {%- endif -%}
+
+              <h3 class="material-explorer__name">{{ block.settings.name }}</h3>
+
+              {%- if block.settings.location != blank -%}
+                <p class="material-explorer__location">{{ block.settings.location }}</p>
+              {%- endif -%}
+
+              {%- if block.settings.description != blank -%}
+                <div class="material-explorer__description">{{ block.settings.description }}</div>
+              {%- endif -%}
+
+              <ul class="material-explorer__specs">
+                {%- if block.settings.hardness != blank -%}
+                  <li>
+                    <span class="material-explorer__specs-label">Hardness:</span>
+                    {{ block.settings.hardness }}
+                  </li>
+                {%- endif -%}
+                {%- if block.settings.finish != blank -%}
+                  <li>
+                    <span class="material-explorer__specs-label">Finish:</span>
+                    {{ block.settings.finish }}
+                  </li>
+                {%- endif -%}
+              </ul>
+
+              {%- if block.settings.shop_link != blank -%}
+                <a href="{{ block.settings.shop_link }}" class="material-explorer__shop-btn">
+                  {{ block.settings.shop_label | default: 'Shop pieces' }}
+                </a>
+              {%- endif -%}
+
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var section = document.getElementById('material-explorer-{{ section.id }}');
+    if (!section) return;
+
+    var listItems = section.querySelectorAll('[data-stone-target]');
+    var panels = section.querySelectorAll('[data-stone-panel]');
+
+    listItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        var targetId = item.getAttribute('data-stone-target');
+
+        listItems.forEach(function (i) {
+          i.classList.remove('is-active');
+          i.setAttribute('aria-selected', 'false');
+        });
+        item.classList.add('is-active');
+        item.setAttribute('aria-selected', 'true');
+
+        panels.forEach(function (panel) {
+          panel.classList.toggle('is-active', panel.id === targetId);
+        });
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Material Explorer",
+  "tag": "section",
+  "class": "shopify-section--material-explorer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "Material Explorer"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Choose Your Stone"
+    },
+    {
+      "type": "text",
+      "id": "request_samples_text",
+      "label": "Request samples label",
+      "default": "Request samples"
+    },
+    {
+      "type": "url",
+      "id": "request_samples_link",
+      "label": "Request samples link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stone",
+      "name": "Stone",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Stone name",
+          "default": "Calacatta Marble"
+        },
+        {
+          "type": "text",
+          "id": "location",
+          "label": "Origin / location",
+          "default": "Apuan Alps, Italy"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Prized for its luminous white ground threaded with bold gold and grey veining. Every slab is a one-of-a-kind geological painting.</p>"
+        },
+        {
+          "type": "text",
+          "id": "hardness",
+          "label": "Hardness",
+          "default": "3-4 Mohs"
+        },
+        {
+          "type": "text",
+          "id": "finish",
+          "label": "Finish",
+          "default": "Polished or Honed"
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main preview image"
+        },
+        {
+          "type": "image_picker",
+          "id": "thumbnail",
+          "label": "Thumbnail swatch (optional)"
+        },
+        {
+          "type": "image_picker",
+          "id": "btn_thumbnail",
+          "label": "Button Thumbnail swatch (optional)"
+        },
+        {
+          "type": "url",
+          "id": "shop_link",
+          "label": "Shop link"
+        },
+        {
+          "type": "text",
+          "id": "shop_label",
+          "label": "Shop button label",
+          "default": "Shop pieces"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Material Explorer",
+      "blocks": [
+        {
+          "type": "stone",
+          "settings": {
+            "name": "Calacatta Marble",
+            "location": "Apuan Alps, Italy",
+            "hardness": "3-4 Mohs",
+            "finish": "Polished or Honed"
+          }
+        },
+        {
+          "type": "stone",
+          "settings": {
+            "name": "Black Granite",
+            "location": "Rajasthan, India",
+            "hardness": "6-7 Mohs",
+            "finish": "Polished or Honed"
+          }
+        },
+        {
+          "type": "stone",
+          "settings": {
+            "name": "Roman Travertine",
+            "location": "Tivoli, Italy",
+            "hardness": "3-4 Mohs",
+            "finish": "Honed or Filled"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

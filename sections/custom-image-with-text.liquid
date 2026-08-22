@@ -1,0 +1,402 @@
+{{ 'custom-image-with-text.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign loading = 'lazy'
+  assign fetchpriority = 'low'
+  if section.index < 3
+    assign loading = 'eager'
+    assign fetchpriority = 'high'
+  endif
+
+  assign image = section.settings.image
+  assign alt_image = image.alt | default: shop.name | escape
+  assign motion_delay = 50
+-%}
+
+{%- capture sizes -%}min({{ settings.page_width }}, 100vw){%- endcapture -%}
+
+{% render 'divider',
+  show_divider: section.settings.show_section_divider,
+  divider_width: section.settings.divider_width
+%}
+
+<div
+  class="section custom-image-with-text custom-image-with-text--{{ section.settings.layout | replace: '_', '-' }} color-{{ section.settings.color_scheme }}{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}"
+  style="--section-padding-top: {{ section.settings.padding_top }}px;--section-padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="custom-image-with-text__wrapper f-grid f-grid-1-cols md:f-grid-2-cols f-grid--gap-none">
+
+    <div class="custom-image-with-text__media-col">
+      <motion-element data-motion="zoom-out" class="block w-full h-full">
+        <div class="custom-image-with-text__media media-wrapper hover-wrapper">
+          {% if section.settings.image != blank %}
+            {{-
+              image
+              | image_url: width: image.width
+              | image_tag:
+                loading: loading,
+                fetchpriority: fetchpriority,
+                sizes: sizes,
+                width: image.width,
+                height: image.height,
+                widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200',
+                alt: alt_image,
+                class: 'hover-scale-up'
+            -}}
+          {% else %}
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg w-full h-full hover-scale-up' }}
+          {% endif %}
+        </div>
+      </motion-element>
+    </div>
+
+    <div class="custom-image-with-text__content-col">
+      <div class="custom-image-with-text__content">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'subheading' %}
+              <motion-element
+                class="custom-image-with-text__subheading block"
+                data-motion="fade-up"
+                data-motion-delay="{{ motion_delay }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.subheading }}
+              </motion-element>
+              {%- assign motion_delay = motion_delay | plus: 50 -%}
+
+            {% when 'heading' %}
+              <{{ block.settings.heading_tag }}
+                class="custom-image-with-text__heading overflow-hidden"
+                {{ block.shopify_attributes }}
+              >
+                <motion-element data-motion="fade-up" data-motion-delay="{{ motion_delay }}" class="block">
+                  {{ block.settings.heading }}
+                </motion-element>
+                {%- if block.settings.heading_italic != blank -%}
+                  {%- assign motion_delay = motion_delay | plus: 50 -%}
+                  <motion-element
+                    data-motion="fade-up"
+                    data-motion-delay="{{ motion_delay }}"
+                    class="block custom-image-with-text__heading-italic"
+                  >
+                    {{ block.settings.heading_italic }}
+                  </motion-element>
+                {%- endif -%}
+              </{{ block.settings.heading_tag }}>
+              {%- assign motion_delay = motion_delay | plus: 50 -%}
+
+            {% when 'text' %}
+              <motion-element
+                class="block custom-image-with-text__text rte"
+                data-motion="fade-up"
+                data-motion-delay="{{ motion_delay }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.text }}
+              </motion-element>
+              {%- assign motion_delay = motion_delay | plus: 50 -%}
+
+            {% when 'spec_item' %}
+              {%- if forloop.first or block.type != previous_type -%}
+                {%- unless spec_grid_open -%}
+                  <motion-element
+                    data-motion="fade-up"
+                    data-motion-delay="{{ motion_delay }}"
+                    class="block custom-image-with-text__specs"
+                  >
+              {%- endunless -%}
+              {%- endif -%}
+              <div class="custom-image-with-text__spec-item" {{ block.shopify_attributes }}>
+                {%- if block.settings.label != blank -%}
+                  <span class="custom-image-with-text__spec-label">{{ block.settings.label }}</span>
+                {%- endif -%}
+                {%- if block.settings.value != blank -%}
+                  <span class="custom-image-with-text__spec-value">{{ block.settings.value }}</span>
+                {%- endif -%}
+              </div>
+              {%- assign spec_grid_open = true -%}
+              {%- assign motion_delay = motion_delay | plus: 20 -%}
+
+            {% when 'button' %}
+              {% if block.settings.button_label != blank %}
+                {%- unless buttons_row_open -%}
+                  <motion-element
+                    data-motion="fade-up"
+                    data-motion-delay="{{ motion_delay }}"
+                    class="block custom-image-with-text__buttons"
+                  >
+                  {%- assign buttons_row_open = true -%}
+                {%- endunless -%}
+                <a
+                  {% if block.settings.button_link != blank %}
+                    href="{{ block.settings.button_link }}"
+                  {% else %}
+                    role="link" aria-disabled="true"
+                    disabled
+                  {% endif %}
+                  class="btn {{ block.settings.button_style }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- block.settings.button_label -}}
+                </a>
+                {%- assign motion_delay = motion_delay | plus: 30 -%}
+              {% endif %}
+          {% endcase %}
+          {%- assign previous_type = block.type -%}
+        {% endfor %}
+
+        {%- if spec_grid_open -%}
+          </motion-element>
+        {%- endif -%}
+        {%- if buttons_row_open -%}
+          </motion-element>
+        {%- endif -%}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Image With Text",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "Image first"
+        },
+        {
+          "value": "text_first",
+          "label": "Text first"
+        }
+      ],
+      "default": "image_first",
+      "label": "Layout"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Divider"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_divider",
+      "default": false,
+      "label": "Show section divider"
+    },
+    {
+      "type": "select",
+      "id": "divider_width",
+      "options": [
+        {
+          "value": "fixed",
+          "label": "Fixed"
+        },
+        {
+          "value": "full",
+          "label": "Full width"
+        }
+      ],
+      "default": "fixed",
+      "label": "Divider width",
+      "visible_if": "{{ section.settings.show_section_divider == true }}"
+    },
+    {
+      "type": "header",
+      "content": "Custom attributes"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom CSS class"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "subheading",
+      "name": "Subheading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "default": "Signature Piece",
+          "label": "Subheading"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "The Monolith",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "heading_italic",
+          "default": "Oval Dining Table",
+          "label": "Heading (italic accent line)",
+          "info": "Optional second line shown in italic serif, on its own row."
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading tag",
+          "default": "h2",
+          "options": [
+            { "value": "h1", "label": "H1" },
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" },
+            { "value": "h4", "label": "H4" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>A single 60mm slab of Calacatta Gold marble, hand-edge-polished to a flawless bevel. Available in four sizes. Ships in 8 weeks. Designed to be the last dining table you ever buy.</p>",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "spec_item",
+      "name": "Spec item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "default": "Material",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "default": "Calacatta Gold",
+          "label": "Value"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Configure & Order"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "options": [
+            { "value": "btn--primary", "label": "Primary" },
+            { "value": "btn--secondary", "label": "Secondary" },
+            { "value": "btn--underline", "label": "Underline" }
+          ],
+          "default": "btn--primary"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Image With Text",
+      "blocks": [
+        { "type": "subheading" },
+        { "type": "heading" },
+        { "type": "text" },
+        {
+          "type": "spec_item",
+          "settings": { "label": "Material", "value": "Calacatta Gold" }
+        },
+        {
+          "type": "spec_item",
+          "settings": { "label": "Thickness", "value": "60mm Slab" }
+        },
+        {
+          "type": "spec_item",
+          "settings": { "label": "Sizes", "value": "4 available" }
+        },
+        {
+          "type": "spec_item",
+          "settings": { "label": "Lead time", "value": "8 weeks" }
+        },
+        {
+          "type": "button",
+          "settings": { "button_label": "Configure & Order", "button_style": "btn--primary" }
+        },
+        {
+          "type": "button",
+          "settings": { "button_label": "View Details", "button_style": "btn--secondary" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
