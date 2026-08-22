@@ -130,8 +130,8 @@
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "eyebrow": "Our Range",
         "heading": "<p>Stone furniture and architectural pieces for every interior.</p>",
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": 10,
+        "padding_bottom": 10,
         "custom_class": ""
       }
     },
