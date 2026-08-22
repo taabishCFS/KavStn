@@ -19,18 +19,18 @@
   color: #55524a;
 }
 
-/* ROWS: alternating 60/40 split, flipping each row — both cards share the row's height */
+/* ROWS: alternating 60/40 split, flipping each row — both images share the row's height */
 .custom-collections-showcase__rows {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .custom-collections-showcase__row {
   display: grid;
   grid-template-columns: 3fr 2fr; /* 60% / 40% */
-  gap: 24px;
-  height: clamp(360px, 34vw, 620px);
+  column-gap: 24px;
+  align-items: start;
 }
 
 .custom-collections-showcase__row--reverse {
@@ -39,23 +39,23 @@
 
 .custom-collections-showcase__row--single {
   grid-template-columns: 1fr;
-  height: clamp(280px, 24vw, 460px);
 }
 
 .custom-collections-showcase__card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  display: block;
   text-decoration: none;
   color: inherit;
 }
 
 .custom-collections-showcase__media {
-  flex: 1 1 auto;
-  min-height: 0;
+  height: clamp(260px, 24vw, 420px);
   overflow: hidden;
   background: #e2dbcb;
   border-radius: 2px;
+}
+
+.custom-collections-showcase__row--single .custom-collections-showcase__media {
+  height: clamp(220px, 18vw, 340px);
 }
 
 .custom-collections-showcase__media img {
@@ -76,7 +76,6 @@
   gap: 10px;
   margin-top: 14px;
   font-size: 14px;
-  flex: 0 0 auto;
 }
 
 .custom-collections-showcase__number {
@@ -104,20 +103,12 @@
   .custom-collections-showcase__row,
   .custom-collections-showcase__row--reverse {
     grid-template-columns: 1fr;
-    height: auto;
-    gap: 24px;
+    row-gap: 24px;
   }
 
-  .custom-collections-showcase__row--single {
+  .custom-collections-showcase__media,
+  .custom-collections-showcase__row--single .custom-collections-showcase__media {
     height: auto;
-  }
-
-  .custom-collections-showcase__card {
-    height: auto;
-  }
-
-  .custom-collections-showcase__media {
     aspect-ratio: 4 / 3;
-    flex: none;
   }
 }
