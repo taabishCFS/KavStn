@@ -704,7 +704,7 @@
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
-        "heading": "Multicolumn",
+        "heading": "",
         "heading_size": "h1",
         "heading_tag": "h2",
         "heading_highlight_style": "none",
