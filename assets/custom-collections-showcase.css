@@ -24,7 +24,7 @@
 .custom-collections-showcase__rows {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 10px;
 }
 
 .custom-collections-showcase__row {
