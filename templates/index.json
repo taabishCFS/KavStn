@@ -169,7 +169,7 @@
         "description": "",
         "text_size": "text-base",
         "show_collection_description": false,
-        "collection": "best-sellers",
+        "collection": "dinning-tables",
         "limit": 8,
         "columns": 4,
         "column_gap": "medium",
