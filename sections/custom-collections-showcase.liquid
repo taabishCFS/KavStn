@@ -27,9 +27,9 @@
     {%- endif -%}
 
     <div class="custom-collections-showcase__grid">
-      {%- for block in section.blocks limit: 4 -%}
+      {%- for block in section.blocks limit: 5 -%}
         {%- liquid
-          assign card_custom_collection = block.settings.custom-collection
+          assign card_custom_collection = block.settings.custom_collection
           assign card_image = block.settings.custom_image
           assign card_title = block.settings.custom_title
           assign card_url = block.settings.custom_link
@@ -48,7 +48,7 @@
         -%}
         <a
           href="{{ card_url | default: '#' }}"
-          class="custom-collections-showcase__card"
+          class="custom-collections-showcase__card{% if forloop.first %} custom-collections-showcase__card--feature{% endif %}"
           {{ block.shopify_attributes }}
         >
           <div class="custom-collections-showcase__media media-wrapper hover-wrapper">
@@ -56,7 +56,7 @@
               <img
                 src="{{ card_image | image_url: width: 1600 }}"
                 srcset="{{ card_image | image_url: width: 600 }} 600w, {{ card_image | image_url: width: 900 }} 900w, {{ card_image | image_url: width: 1200 }} 1200w, {{ card_image | image_url: width: 1600 }} 1600w, {{ card_image | image_url: width: 2000 }} 2000w"
-                sizes="(min-width: 768px) 45vw, 100vw"
+                sizes="(min-width: 768px) 33vw, 100vw"
                 alt="{{ card_alt }}"
                 loading="{{ loading }}"
                 fetchpriority="{{ fetchpriority }}"
@@ -92,7 +92,7 @@
   "disabled_on": {
     "groups": ["header", "footer", "custom.overlay"]
   },
-  "max_blocks": 4,
+  "max_blocks": 5,
   "settings": [
     {
       "type": "header",
@@ -153,11 +153,11 @@
   "blocks": [
     {
       "type": "custom-collection",
-      "name": "custom-collection card",
+      "name": "Collection card",
       "settings": [
         {
           "type": "paragraph",
-          "content": "Cards display in a 2x2 grid, all equal size."
+          "content": "5 cards total. Card 1 is the tall feature on the left; cards 2–5 fill the 2x2 grid beside it (2 = top-middle, 3 = top-right, 4 = bottom-middle, 5 = bottom-right)."
         },
         {
           "type": "text",
@@ -167,27 +167,27 @@
         },
         {
           "type": "collection",
-          "id": "custom-collection",
-          "label": "custom-collection",
+          "id": "custom_collection",
+          "label": "Collection",
           "info": "Optional — auto-fills image, title, and link below if left blank in those fields."
         },
         {
           "type": "image_picker",
           "id": "custom_image",
           "label": "Custom image",
-          "info": "Overrides the custom-collection's featured image."
+          "info": "Overrides the collection's featured image."
         },
         {
           "type": "text",
           "id": "custom_title",
           "label": "Custom title",
-          "info": "Overrides the custom-collection title."
+          "info": "Overrides the collection title."
         },
         {
           "type": "url",
           "id": "custom_link",
           "label": "Custom link",
-          "info": "Overrides the custom-collection link."
+          "info": "Overrides the collection link."
         }
       ]
     }
@@ -198,19 +198,23 @@
       "blocks": [
         {
           "type": "custom-collection",
-          "settings": { "number_label": "01", "custom_title": "Dining Tables" }
+          "settings": { "number_label": "01", "custom_title": "Bespoke" }
         },
         {
           "type": "custom-collection",
-          "settings": { "number_label": "02", "custom_title": "Console Tables" }
+          "settings": { "number_label": "02", "custom_title": "Coffee Tables" }
         },
         {
           "type": "custom-collection",
-          "settings": { "number_label": "03", "custom_title": "Coffee Tables" }
+          "settings": { "number_label": "03", "custom_title": "Dining Tables" }
         },
         {
           "type": "custom-collection",
-          "settings": { "number_label": "04", "custom_title": "Side Tables" }
+          "settings": { "number_label": "04", "custom_title": "Console Tables" }
+        },
+        {
+          "type": "custom-collection",
+          "settings": { "number_label": "05", "custom_title": "Chairs" }
         }
       ]
     }
