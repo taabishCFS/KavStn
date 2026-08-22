@@ -275,12 +275,36 @@
         "divider_width": "fixed",
         "custom_class": ""
       }
+    },
+    "bespoke_enquiry_Fq7FTN": {
+      "type": "bespoke-enquiry",
+      "name": "Bespoke Enquiry",
+      "settings": {
+        "color_scheme": "",
+        "overlay_opacity": 55,
+        "eyebrow": "Bespoke Furniture",
+        "heading": "The Aurelia, built",
+        "heading_italic": "for your exact space.",
+        "description": "<p>Need a different size, a different stone, or a different base? Every element of this table is configurable. Book a complimentary studio consultation and we'll design it with you from scratch.</p>",
+        "name_label": "Your Name",
+        "name_placeholder": "Alexandra Morrison",
+        "email_label": "Email",
+        "email_placeholder": "alex@example.com",
+        "brief_label": "Your Brief",
+        "brief_placeholder": "I'm looking for a 280cm dining table in Nero Marquina for an open-plan kitchen...",
+        "button_label": "Send Enquiry",
+        "success_message": "Thanks — we'll be in touch shortly.",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_class": ""
+      }
     }
   },
   "order": [
     "breadcrumbs",
     "main",
     "testimonials_8JHr3L",
-    "related_products_WHQLbL"
+    "related_products_WHQLbL",
+    "bespoke_enquiry_Fq7FTN"
   ]
 }
