@@ -86,7 +86,7 @@
           "type": "custom-collection",
           "settings": {
             "number_label": "",
-            "custom_collection": "best-sellers",
+            "custom_collection": "dinning-tables",
             "custom_title": "",
             "custom_link": ""
           }
@@ -95,7 +95,7 @@
           "type": "custom-collection",
           "settings": {
             "number_label": "",
-            "custom_collection": "ellipse-dining-tables",
+            "custom_collection": "chair",
             "custom_title": "",
             "custom_link": ""
           }
@@ -104,7 +104,7 @@
           "type": "custom-collection",
           "settings": {
             "number_label": "",
-            "custom_collection": "frontpage",
+            "custom_collection": "coffee-table",
             "custom_title": "",
             "custom_link": ""
           }
@@ -113,7 +113,7 @@
           "type": "custom-collection",
           "settings": {
             "number_label": "",
-            "custom_collection": "round-dining-tables",
+            "custom_collection": "console-table",
             "custom_title": "",
             "custom_link": ""
           }
@@ -122,7 +122,7 @@
           "type": "custom-collection",
           "settings": {
             "number_label": "01",
-            "custom_collection": "",
+            "custom_collection": "side-table",
             "custom_title": "",
             "custom_link": ""
           }
@@ -131,7 +131,7 @@
           "type": "custom-collection",
           "settings": {
             "number_label": "01",
-            "custom_collection": "",
+            "custom_collection": "side-board",
             "custom_title": "",
             "custom_link": ""
           }
