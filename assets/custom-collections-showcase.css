@@ -5,7 +5,7 @@
 }
 
 .custom-collections-showcase__eyebrow {
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #b08d57;
@@ -13,7 +13,7 @@
 }
 
 .custom-collections-showcase__heading {
-  font-size: clamp(20px, 2vw, 26px);
+  font-size: clamp(20px, 2vw, 30px);
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
