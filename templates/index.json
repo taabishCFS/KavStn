@@ -87,7 +87,7 @@
           "settings": {
             "number_label": "",
             "custom_collection": "dinning-tables",
-            "custom_image": "shopify://shop_images/Console_Table.png",
+            "custom_image": "shopify://shop_images/Dining_table-Kavestone.png",
             "custom_title": "",
             "custom_link": ""
           }
@@ -117,7 +117,7 @@
           "settings": {
             "number_label": "",
             "custom_collection": "console-table",
-            "custom_image": "shopify://shop_images/Console_kave.png",
+            "custom_image": "shopify://shop_images/Console_Table.png",
             "custom_title": "",
             "custom_link": ""
           }
@@ -127,7 +127,7 @@
           "settings": {
             "number_label": "01",
             "custom_collection": "side-board",
-            "custom_image": "shopify://shop_images/Sideboard_Kave.png",
+            "custom_image": "shopify://shop_images/Sideboard.png",
             "custom_title": "",
             "custom_link": ""
           }
@@ -137,7 +137,7 @@
           "settings": {
             "number_label": "01",
             "custom_collection": "side-table",
-            "custom_image": "shopify://shop_images/Cozy_Boucle_Corner_with_Warm_Lamp.png",
+            "custom_image": "shopify://shop_images/side_table.png",
             "custom_title": "",
             "custom_link": ""
           }
