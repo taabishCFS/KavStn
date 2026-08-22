@@ -9,6 +9,7 @@
   endif
 
   assign image = section.settings.background_image
+  assign image_mobile = section.settings.background_image_mobile
   assign alt_image = image.alt | default: section.settings.heading | default: shop.name | escape
 -%}
 
@@ -18,16 +19,26 @@
 >
   <div class="bespoke-enquiry__bg">
     {%- if image != blank -%}
-      <img
-        src="{{ image | image_url: width: 2000 }}"
-        srcset="{{ image | image_url: width: 800 }} 800w, {{ image | image_url: width: 1200 }} 1200w, {{ image | image_url: width: 1600 }} 1600w, {{ image | image_url: width: 2000 }} 2000w, {{ image | image_url: width: 2600 }} 2600w, {{ image | image_url: width: 3200 }} 3200w"
-        sizes="100vw"
-        alt="{{ alt_image }}"
-        loading="{{ loading }}"
-        fetchpriority="{{ fetchpriority }}"
-        width="{{ image.width }}"
-        height="{{ image.height }}"
-      >
+      <picture>
+        {%- if image_mobile != blank -%}
+          <source
+            media="(max-width: 767px)"
+            srcset="{{ image_mobile | image_url: width: 500 }} 500w, {{ image_mobile | image_url: width: 750 }} 750w, {{ image_mobile | image_url: width: 1000 }} 1000w, {{ image_mobile | image_url: width: 1200 }} 1200w"
+            width="{{ image_mobile.width }}"
+            height="{{ image_mobile.height }}"
+          >
+        {%- endif -%}
+        <img
+          src="{{ image | image_url: width: 2000 }}"
+          srcset="{{ image | image_url: width: 800 }} 800w, {{ image | image_url: width: 1200 }} 1200w, {{ image | image_url: width: 1600 }} 1600w, {{ image | image_url: width: 2000 }} 2000w, {{ image | image_url: width: 2600 }} 2600w, {{ image | image_url: width: 3200 }} 3200w"
+          sizes="100vw"
+          alt="{{ alt_image }}"
+          loading="{{ loading }}"
+          fetchpriority="{{ fetchpriority }}"
+          width="{{ image.width }}"
+          height="{{ image.height }}"
+        >
+      </picture>
     {%- endif -%}
     <div class="bespoke-enquiry__overlay" style="--color-overlay-alpha: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></div>
   </div>
@@ -57,7 +68,10 @@
       </div>
 
       <div class="bespoke-enquiry__form-wrap">
-        {%- form 'contact', id: 'BespokeEnquiryForm-' | append: section.id, class: 'bespoke-enquiry__form' -%}
+        {%- liquid
+          assign form_id = 'BespokeEnquiryForm-' | append: section.id
+        -%}
+        {%- form 'contact', id: form_id, class: 'bespoke-enquiry__form' -%}
           {%- if form.posted_successfully? -%}
             <p class="bespoke-enquiry__success">{{ section.settings.success_message | default: "Thanks — we'll be in touch shortly." }}</p>
           {%- endif -%}
@@ -134,6 +148,12 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Mobile background image",
+      "info": "Optional — shown only on screens under 768px. If left blank, the desktop image is used and scaled for mobile."
     },
     {
       "type": "range",
