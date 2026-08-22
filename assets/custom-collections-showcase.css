@@ -73,7 +73,7 @@
 .custom-collections-showcase__caption {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   margin-top: 14px;
   font-size: 14px;
 }
@@ -86,7 +86,7 @@
 .custom-collections-showcase__title {
   color: #1c1c1c;
   font-weight: 500;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .custom-collections-showcase__arrow {
