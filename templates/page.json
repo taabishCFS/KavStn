@@ -71,7 +71,7 @@
         "content_position": "middle-center",
         "content_alignment": "center",
         "padding_top": 0,
-        "padding_bottom": 8,
+        "padding_bottom": 2,
         "custom_class": ""
       }
     }
