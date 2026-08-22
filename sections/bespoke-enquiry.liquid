@@ -1,0 +1,269 @@
+{{ 'bespoke-enquiry.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign loading = 'lazy'
+  assign fetchpriority = 'low'
+  if section.index < 3
+    assign loading = 'eager'
+    assign fetchpriority = 'high'
+  endif
+
+  assign image = section.settings.background_image
+  assign alt_image = image.alt | default: section.settings.heading | default: shop.name | escape
+-%}
+
+<div
+  class="section bespoke-enquiry color-{{ section.settings.color_scheme }}{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}"
+  style="--section-padding-top: {{ section.settings.padding_top }}px;--section-padding-bottom: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="bespoke-enquiry__bg">
+    {%- if image != blank -%}
+      <img
+        src="{{ image | image_url: width: 2000 }}"
+        srcset="{{ image | image_url: width: 800 }} 800w, {{ image | image_url: width: 1200 }} 1200w, {{ image | image_url: width: 1600 }} 1600w, {{ image | image_url: width: 2000 }} 2000w, {{ image | image_url: width: 2600 }} 2600w, {{ image | image_url: width: 3200 }} 3200w"
+        sizes="100vw"
+        alt="{{ alt_image }}"
+        loading="{{ loading }}"
+        fetchpriority="{{ fetchpriority }}"
+        width="{{ image.width }}"
+        height="{{ image.height }}"
+      >
+    {%- endif -%}
+    <div class="bespoke-enquiry__overlay" style="--color-overlay-alpha: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></div>
+  </div>
+
+  <div class="page-width">
+    <div class="bespoke-enquiry__grid">
+
+      <div class="bespoke-enquiry__content">
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="bespoke-enquiry__eyebrow">{{ section.settings.eyebrow }}</p>
+        {%- endif -%}
+
+        {%- if section.settings.heading != blank or section.settings.heading_italic != blank -%}
+          <h2 class="bespoke-enquiry__heading">
+            {%- if section.settings.heading != blank -%}
+              <span class="bespoke-enquiry__heading-line">{{ section.settings.heading }}</span>
+            {%- endif -%}
+            {%- if section.settings.heading_italic != blank -%}
+              <span class="bespoke-enquiry__heading-line bespoke-enquiry__heading-italic">{{ section.settings.heading_italic }}</span>
+            {%- endif -%}
+          </h2>
+        {%- endif -%}
+
+        {%- if section.settings.description != blank -%}
+          <div class="bespoke-enquiry__description rte">{{ section.settings.description }}</div>
+        {%- endif -%}
+      </div>
+
+      <div class="bespoke-enquiry__form-wrap">
+        {%- form 'contact', id: 'BespokeEnquiryForm-' | append: section.id, class: 'bespoke-enquiry__form' -%}
+          {%- if form.posted_successfully? -%}
+            <p class="bespoke-enquiry__success">{{ section.settings.success_message | default: "Thanks — we'll be in touch shortly." }}</p>
+          {%- endif -%}
+          {%- if form.errors -%}
+            <p class="bespoke-enquiry__error">{{ form.errors | default_errors }}</p>
+          {%- endif -%}
+
+          <div class="bespoke-enquiry__field">
+            <label for="BespokeEnquiryName-{{ section.id }}">{{ section.settings.name_label | default: 'Your Name' }}</label>
+            <input
+              type="text"
+              id="BespokeEnquiryName-{{ section.id }}"
+              name="contact[name]"
+              value="{{ form.name }}"
+              placeholder="{{ section.settings.name_placeholder }}"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div class="bespoke-enquiry__field">
+            <label for="BespokeEnquiryEmail-{{ section.id }}">{{ section.settings.email_label | default: 'Email' }}</label>
+            <input
+              type="email"
+              id="BespokeEnquiryEmail-{{ section.id }}"
+              name="contact[email]"
+              value="{{ form.email }}"
+              placeholder="{{ section.settings.email_placeholder }}"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <div class="bespoke-enquiry__field">
+            <label for="BespokeEnquiryBrief-{{ section.id }}">{{ section.settings.brief_label | default: 'Your Brief' }}</label>
+            <textarea
+              id="BespokeEnquiryBrief-{{ section.id }}"
+              name="contact[body]"
+              rows="4"
+              placeholder="{{ section.settings.brief_placeholder }}"
+              required
+            >{{ form.body }}</textarea>
+          </div>
+
+          <button type="submit" class="bespoke-enquiry__submit">
+            {{ section.settings.button_label | default: 'Send Enquiry' }}
+          </button>
+        {%- endform -%}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Bespoke Enquiry",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-2"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Image overlay opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 55
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Bespoke Furniture"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Aurelia, built"
+    },
+    {
+      "type": "text",
+      "id": "heading_italic",
+      "label": "Heading (italic accent line)",
+      "default": "for your exact space.",
+      "info": "Optional second line shown in italic serif, on its own row."
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Need a different size, a different stone, or a different base? Every element of this table is configurable. Book a complimentary studio consultation and we'll design it with you from scratch.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Form"
+    },
+    {
+      "type": "text",
+      "id": "name_label",
+      "label": "Name field label",
+      "default": "Your Name"
+    },
+    {
+      "type": "text",
+      "id": "name_placeholder",
+      "label": "Name field placeholder",
+      "default": "Alexandra Morrison"
+    },
+    {
+      "type": "text",
+      "id": "email_label",
+      "label": "Email field label",
+      "default": "Email"
+    },
+    {
+      "type": "text",
+      "id": "email_placeholder",
+      "label": "Email field placeholder",
+      "default": "alex@example.com"
+    },
+    {
+      "type": "text",
+      "id": "brief_label",
+      "label": "Brief field label",
+      "default": "Your Brief"
+    },
+    {
+      "type": "text",
+      "id": "brief_placeholder",
+      "label": "Brief field placeholder",
+      "default": "I'm looking for a 280cm dining table in Nero Marquina for an open-plan kitchen..."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Submit button label",
+      "default": "Send Enquiry"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success message",
+      "default": "Thanks — we'll be in touch shortly."
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Custom attributes"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom CSS class"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bespoke Enquiry"
+    }
+  ]
+}
+{% endschema %}
