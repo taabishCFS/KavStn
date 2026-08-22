@@ -584,7 +584,7 @@
         "heading_highlight_style": "none",
         "subheading": "",
         "description": "",
-        "blog": "",
+        "blog": "blog-posts",
         "post_limit": 3,
         "columns_desktop": 3,
         "column_gap": "medium",
