@@ -15,7 +15,7 @@
 
 <div
   class="section bespoke-enquiry color-{{ section.settings.color_scheme }}{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}"
-  style="--section-padding-top: {{ section.settings.padding_top }}px;--section-padding-bottom: {{ section.settings.padding_bottom }}px;"
+  style="--section-padding-top: {{ section.settings.padding_top }}px;--section-padding-bottom: {{ section.settings.padding_bottom }}px;--heading-color: {{ section.settings.heading_color }};--description-color: {{ section.settings.description_color }};--form-label-color: {{ section.settings.form_label_color }};--form-input-text-color: {{ section.settings.form_input_text_color }};"
 >
   <div class="bespoke-enquiry__bg">
     {%- if image != blank -%}
@@ -164,6 +164,34 @@
       "step": 5,
       "unit": "%",
       "default": 55
+    },
+    {
+      "type": "header",
+      "content": "Text colors"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#f7f4ee"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#cfc9bc"
+    },
+    {
+      "type": "color",
+      "id": "form_label_color",
+      "label": "Form label color",
+      "default": "#f7f4ee"
+    },
+    {
+      "type": "color",
+      "id": "form_input_text_color",
+      "label": "Form input text color",
+      "default": "#f7f4ee"
     },
     {
       "type": "header",
