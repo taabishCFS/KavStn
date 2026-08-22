@@ -1,26 +1,38 @@
 {%- liquid
-  assign desktop_height = section.settings.desktop_height
-  assign mobile_height = section.settings.mobile_height
+  assign image_aspect_ratio = section.settings.image.aspect_ratio | default: 2.333
+  assign image_mobile_aspect_ratio = section.settings.image_mobile.aspect_ratio | default: image_aspect_ratio
 -%}
 <style>
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
-    {%- if section.settings.image != blank and desktop_height == 'adapt' %}
-      --media-ratio: {{ section.settings.image.aspect_ratio }};
-    {% endif -%}
+    --media-ratio: {{ image_aspect_ratio }};
+    --media-ratio-mobile: {{ image_mobile_aspect_ratio }};
     {%- if section.settings.container == 'full' -%}
       --padding-x: var(--page-padding);
     {%- endif -%}
   }
 
-  {%- if section.settings.image_mobile != blank and mobile_height == 'adapt' %}
-    @media screen and (max-width: 767px) {
-      #shopify-section-{{ section.id }} {
-        --media-ratio-mobile: {{ section.settings.image_mobile.aspect_ratio }};
-      }
-    }
-  {% endif -%}
+   .image-with-text-overlay .media--adapt {
+  aspect-ratio: var(--aspect-ratio, var(--media-ratio, 2.333));
+  height: auto;
+  width: 100%;
+}
+ 
+@media screen and (max-width: 767px) {
+  .image-with-text-overlay .media--adapt {
+    aspect-ratio: var(--aspect-ratio-mobile, var(--media-ratio-mobile, 1.778));
+  }
+}
+ 
+.image-with-text-overlay .media--adapt picture,
+.image-with-text-overlay .media--adapt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+} 
+ 
 </style>
 <div class="image-with-text-overlay section--padding{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}">
   <div class="{% if section.settings.container == 'full' %}w-full{% else %}page-width{% endif %}">
@@ -33,7 +45,8 @@
       >
         <motion-element
           data-motion="zoom-out"
-          class="block relative overflow-hidden w-full h-full media mb:media--{{ mobile_height }}{% if desktop_height == 'adapt' %} media--adapt{% else %} media--{{ desktop_height }}{% endif %}"
+          class="block relative overflow-hidden w-full h-full media media--adapt-mobile media--adapt"
+          style="--aspect-ratio: {{ image_aspect_ratio }}; --aspect-ratio-mobile: {{ image_mobile_aspect_ratio }};"
         >
           {%- if section.settings.image != blank -%}
             {%- capture sizes -%}{% if section.settings.container == 'full' %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
@@ -165,42 +178,6 @@
       "label": "t:sections.all.image.label"
     },
     {
-      "type": "select",
-      "id": "desktop_height",
-      "label": "t:sections.all.desktop_height.label",
-      "options": [
-        {
-          "label": "t:sections.all.height.options__1.label",
-          "value": "adapt"
-        },
-        {
-          "label": "t:sections.all.height.options__2.label",
-          "value": "extra-small"
-        },
-        {
-          "label": "t:sections.all.height.options__3.label",
-          "value": "small"
-        },
-        {
-          "label": "t:sections.all.height.options__4.label",
-          "value": "medium"
-        },
-        {
-          "label": "t:sections.all.height.options__5.label",
-          "value": "extra-medium"
-        },
-        {
-          "label": "t:sections.all.height.options__6.label",
-          "value": "large"
-        },
-        {
-          "label": "t:sections.all.height.options__7.label",
-          "value": "extra-large"
-        }
-      ],
-      "default": "extra-medium"
-    },
-    {
       "type": "range",
       "label": "t:sections.all.overlay_opacity.label",
       "id": "overlay_opacity",
@@ -316,38 +293,8 @@
     {
       "type": "image_picker",
       "id": "image_mobile",
-      "label": "t:sections.all.image.label"
-    },
-    {
-      "type": "select",
-      "id": "mobile_height",
-      "label": "t:sections.all.mobile_height.label",
-      "options": [
-        {
-          "value": "auto",
-          "label": "t:sections.all.height.options__8.label"
-        },
-        {
-          "value": "small",
-          "label": "t:sections.all.height.options__3.label"
-        },
-        {
-          "value": "medium",
-          "label": "t:sections.all.height.options__4.label"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.all.height.options__6.label"
-        },
-        {
-          "value": "extra-large",
-          "label": "t:sections.all.height.options__7.label"
-        },
-        {
-          "label": "t:sections.all.height.options__1.label",
-          "value": "adapt"
-        }
-      ]
+      "label": "Mobile image",
+      "info": "Optional — used only on screens under 768px. If left blank, the desktop image is used and scaled to fit its own aspect ratio on mobile too. The banner height always adapts to the image's natural aspect ratio (no cropping)."
     },
     {
       "type": "header",
