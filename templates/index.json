@@ -626,6 +626,102 @@
         "accessibility_info": "Slideshow about our brand",
         "custom_class": ""
       }
+    },
+    "multicolumn_QpwPWM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Bmqy4t": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "medium",
+            "title": "Hand Crafter In The UK",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "<p>Metaculously made by skilled artisancs</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_CMr9Cm": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "medium",
+            "title": "5 year Guarantee",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "<p>Covered By a comprehensive 5 Year structural gurarantee</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_iWdMja": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "medium",
+            "title": "Free UK delivery",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "<p>Free delivery on all orders</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_6BtJMf": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "medium",
+            "title": "Flexible Payment Options",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "<p>Shop Pay, Klarna, Clearpay & Snap Finance<br/><br/></p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_Bmqy4t",
+        "column_CMr9Cm",
+        "column_iWdMja",
+        "column_6BtJMf"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
+        "heading": "Multicolumn",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "center",
+        "columns_desktop": 4,
+        "column_gap": "medium",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
     }
   },
   "order": [
@@ -639,6 +735,7 @@
     "featured_collection_P98JFR",
     "image_comparison_DLqWAY",
     "featured_blog_UB4YXk",
-    "slideshow_Y7iTFV"
+    "slideshow_Y7iTFV",
+    "multicolumn_QpwPWM"
   ]
 }
