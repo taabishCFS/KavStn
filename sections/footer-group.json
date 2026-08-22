@@ -13,7 +13,9 @@
   "sections": {
     "newsletter_NeRdet": {
       "type": "newsletter",
-      "custom_css": [],
+      "custom_css": [
+        "@media (max-width: 767.98px) {.section__header {padding-bottom: 0px !important; }}"
+      ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
