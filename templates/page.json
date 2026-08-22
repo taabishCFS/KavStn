@@ -71,13 +71,80 @@
         "content_position": "middle-center",
         "content_alignment": "center",
         "padding_top": 0,
-        "padding_bottom": 2,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "layered_images_with_text_AYFqFq": {
+      "type": "layered-images-with-text",
+      "blocks": {
+        "image_TYjwqP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_bea486d2-0725-4f07-845f-8c106827d812.jpg",
+            "custom_classes": ""
+          }
+        },
+        "image_r8E3y7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_7e86fafa-5e86-42da-9967-241f32ff1c2a.jpg",
+            "custom_classes": ""
+          }
+        },
+        "image_JMr83k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7_d9a255c8-11c3-49af-805b-39f5a41115be.jpg",
+            "custom_classes": ""
+          }
+        },
+        "image_x9KtP7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_bc900a94-f012-411e-9121-9b20bad7e56e.jpg",
+            "custom_classes": ""
+          }
+        },
+        "image_MHhXjG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7_3ee0d55c-371d-47dc-8c29-5f058c5ce8e1.jpg",
+            "custom_classes": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TYjwqP",
+        "image_r8E3y7",
+        "image_JMr83k",
+        "image_x9KtP7",
+        "image_MHhXjG"
+      ],
+      "name": "t:sections.layered-images-with-text.name",
+      "settings": {
+        "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
+        "heading": "YOUR SPACE. YOUR STONE. YOUR DESIGN.",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "<p>From the first idea to the final detail, create furniture made exclusively for you.</p>",
+        "description_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
         "custom_class": ""
       }
     }
   },
   "order": [
     "main",
-    "image_with_text_overlay_JVXnHG"
+    "image_with_text_overlay_JVXnHG",
+    "layered_images_with_text_AYFqFq"
   ]
 }
