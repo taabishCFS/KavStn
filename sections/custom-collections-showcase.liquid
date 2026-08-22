@@ -84,16 +84,14 @@
             {%- else -%}
               {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg w-full h-full hover-scale-up' }}
             {%- endif -%}
-          </div>
 
-          <div class="custom-collections-showcase__caption">
-            {%- if block.settings.number_label != blank -%}
-              <span class="custom-collections-showcase__number">{{ block.settings.number_label }}</span>
-            {%- endif -%}
+            <div class="custom-collections-showcase__overlay"></div>
+
             {%- if card_title != blank -%}
-              <span class="custom-collections-showcase__title">{{ card_title }}</span>
+              <div class="custom-collections-showcase__caption">
+                <span class="custom-collections-showcase__title">{{ card_title }}</span>
+              </div>
             {%- endif -%}
-            <span class="custom-collections-showcase__arrow" aria-hidden="true">&rarr;</span>
           </div>
         </a>
 
