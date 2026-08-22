@@ -624,7 +624,7 @@
         "button_jTp4Ye"
       ],
       "custom_css": [
-        "body{background-color: #f2ede4 !important;}"
+        "body {background-color: #f2ede4 !important;}"
       ],
       "name": "t:sections.image-with-text-overlay.name",
       "settings": {
@@ -634,7 +634,7 @@
         "enable_parallax": true,
         "parallax_direction": "vertical",
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
-        "content_position": "middle-left",
+        "content_position": "middle-center",
         "content_alignment": "center",
         "image_mobile": "shopify://shop_images/image-02.jpg",
         "padding_top": 0,
