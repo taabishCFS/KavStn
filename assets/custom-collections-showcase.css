@@ -97,7 +97,7 @@
 .custom-collections-showcase__title {
   color: #f7f4ee;
   font-size: clamp(18px, 1.8vw, 24px);
-  font-weight: 500;
+  font-weight: bolder;
   letter-spacing: 0.02em;
 }
 
