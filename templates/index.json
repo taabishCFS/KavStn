@@ -384,17 +384,9 @@
         "button_x8GRmk": {
           "type": "button",
           "settings": {
-            "button_label": "Configure & Order",
-            "button_link": "",
+            "button_label": "View",
+            "button_link": "shopify://products/oval-tables-3",
             "button_style": "btn--primary"
-          }
-        },
-        "button_fryzJC": {
-          "type": "button",
-          "settings": {
-            "button_label": "View Details",
-            "button_link": "",
-            "button_style": "btn--secondary"
           }
         }
       },
@@ -406,8 +398,7 @@
         "spec_item_iFincA",
         "spec_item_LBenTF",
         "spec_item_jmVFDr",
-        "button_x8GRmk",
-        "button_fryzJC"
+        "button_x8GRmk"
       ],
       "name": "Custom Image With Text",
       "settings": {
