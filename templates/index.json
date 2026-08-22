@@ -623,6 +623,7 @@
         "text_LEmMHA",
         "button_jTp4Ye"
       ],
+      "disabled": true,
       "custom_css": [
         "body {background-color: #f2ede4 !important;}"
       ],
@@ -671,12 +672,11 @@
       "block_order": [
         "slide_pijRFN"
       ],
-      "disabled": true,
       "name": "t:sections.slideshow.name",
       "settings": {
         "container": "full",
         "layout": "standard",
-        "slide_height": "large",
+        "slide_height": "adapt",
         "show_dots": true,
         "autoplay": false,
         "autoplay_delay": 3,
