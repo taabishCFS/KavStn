@@ -14,7 +14,7 @@
     "newsletter_NeRdet": {
       "type": "newsletter",
       "custom_css": [
-        "@media (max-width: 767.98px) {.section__header {padding-bottom: 0; }}"
+        "@media (max-width: 767.98px) {.section__header {padding-bottom: 0 !important; }}"
       ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
