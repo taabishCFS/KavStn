@@ -456,14 +456,13 @@
       "settings": {
         "container": "full",
         "image": "shopify://shop_images/Untitled_design.png",
-        "desktop_height": "extra-medium",
         "overlay_opacity": 70,
         "enable_parallax": false,
         "parallax_direction": "vertical",
         "color_scheme": "",
         "content_position": "middle-left",
         "content_alignment": "left",
-        "mobile_height": "auto",
+        "image_mobile": "shopify://shop_images/Mobile_banner_kave_2.jpg",
         "padding_top": 0,
         "padding_bottom": 0,
         "custom_class": ""
@@ -591,6 +590,8 @@
           "type": "slide",
           "settings": {
             "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
+            "background": "shopify://shop_images/image-01.jpg",
+            "background_mobile": "shopify://shop_images/image-02.jpg",
             "image_overlay_opacity": 0,
             "show_content_in_container": true,
             "content_position": "middle-center",
