@@ -126,6 +126,7 @@
           "settings": {
             "number_label": "01",
             "custom_collection": "side-board",
+            "custom_image": "shopify://shop_images/Sideboard_Kave.png",
             "custom_title": "",
             "custom_link": ""
           }
@@ -135,6 +136,7 @@
           "settings": {
             "number_label": "01",
             "custom_collection": "side-table",
+            "custom_image": "shopify://shop_images/Cozy_Boucle_Corner_with_Warm_Lamp.png",
             "custom_title": "",
             "custom_link": ""
           }
