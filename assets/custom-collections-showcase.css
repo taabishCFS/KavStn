@@ -75,7 +75,7 @@
 .custom-collections-showcase__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(20, 18, 14, 0.28);
+  background: rgba(20, 18, 14, 0);
   transition: background 0.25s ease;
 }
 
