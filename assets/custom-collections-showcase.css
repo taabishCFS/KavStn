@@ -81,6 +81,7 @@
 
 .custom-collections-showcase__card:hover .custom-collections-showcase__overlay {
   background: rgba(20, 18, 14, 0.4);
+  display: block !important;
 }
 
 .custom-collections-showcase__caption {
