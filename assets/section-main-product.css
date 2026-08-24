@@ -236,8 +236,8 @@
   }
 }
 .product__block {
-  --product-blocks-gap: 2.4rem;
-  --product-blocks-gap-large: 3.2rem;
+  --product-blocks-gap: 1rem;
+  --product-blocks-gap-large: 1.5rem;
   margin: var(--product-blocks-gap) 0;
 }
 .product__block iframe {
