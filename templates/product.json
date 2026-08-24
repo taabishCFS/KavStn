@@ -67,6 +67,14 @@
             "show_gift_card_recipient": true
           }
         },
+        "bespoke_button_Fp66gc": {
+          "type": "bespoke_button",
+          "settings": {
+            "button_label": "Create Your Bespoke Piece",
+            "button_link": "shopify://pages/bespoke",
+            "button_style": "btn--primary"
+          }
+        },
         "icon_with_text": {
           "type": "icon-with-text",
           "settings": {
@@ -146,6 +154,7 @@
         "description",
         "variant_picker",
         "buy_buttons",
+        "bespoke_button_Fp66gc",
         "icon_with_text",
         "pickup_availability",
         "complementary",
