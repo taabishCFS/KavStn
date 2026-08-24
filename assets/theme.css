@@ -6756,8 +6756,8 @@ shopify-account::part(dialog)::backdrop {
   justify-content: flex-end;
 }
 .footer__wrapper {
-  padding-top: 7.8rem;
-  padding-bottom: 7rem;
+  /* padding-top: 7.8rem;
+  padding-bottom: 7rem; */
 }
 .footer__copyright-content {
   color: rgba(var(--color-foreground), 0.8);
@@ -6890,8 +6890,8 @@ shopify-account::part(dialog)::backdrop {
     justify-content: flex-start;
   }
   .footer__wrapper {
-    padding-top: 3.2rem;
-    padding-bottom: 3.2rem;
+    /* padding-top: 3.2rem;
+    padding-bottom: 3.2rem; */
   }
   .footer-block {
     width: 100%;
