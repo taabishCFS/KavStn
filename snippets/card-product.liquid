@@ -311,9 +311,9 @@
       <h3 class="product-card__title text-pcard-title">
         <a class="reversed-link" href="{{ product.url }}">{{- product.title -}}</a>
       </h3>
-            {% comment %} {%- if show_color_swatches -%} {% endcomment %}
+            {%- if show_color_swatches -%}
         {%- render 'pcard-color-swatch', product: product -%}
-      {% comment %} {%- endif -%} {% endcomment %}
+      {%- endif -%}
       {%- if show_price -%}
         {% render 'price', product: product, alignment: settings.pcard_content_alignment %}
       {%- endif -%}
