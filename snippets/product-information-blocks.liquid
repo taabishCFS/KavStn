@@ -352,6 +352,21 @@
               product_id: product.id
             -%}
           </div>
+          {% when 'bespoke_button' %}
+      {% if block.settings.button_label != blank %}
+        <div class="product__bespoke-button block" {{ block.shopify_attributes }}>
+          <a
+            {% if block.settings.button_link != blank %}
+              href="{{ block.settings.button_link }}"
+            {% else %}
+              role="link" aria-disabled="true"
+            {% endif %}
+            class="btn btn--full-width {{ block.settings.button_style }}"
+          >
+            {{- block.settings.button_label -}}
+          </a>
+        </div>
+      {% endif %}
         {%- when 'pickup_availability' -%}
           <div
             class="product__block product__block--{{ block.type }}"
