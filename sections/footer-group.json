@@ -43,6 +43,21 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "image_text_iNQCC4": {
+          "type": "image_text",
+          "settings": {
+            "block_width": 25,
+            "heading": "",
+            "heading_size": "h4",
+            "image": "shopify://shop_images/7_ecf635b9-0ad0-49c4-84f3-d402b063fe0e.jpg",
+            "image_width": 150,
+            "text": "<p>Unit 1,<br/>15 Bakewell Road,<br/>Loughborough,<br/>LEICS,<br/>LE11 5QY<br/><br/><strong>Customer Support Team<br/></strong>📞 0116-296-2565<br/><br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "open_default": false,
+            "show_divider": false
+          }
+        },
         "menu_DEKGYP": {
           "type": "menu",
           "settings": {
@@ -78,6 +93,7 @@
         },
         "contact_information_Uex3ii": {
           "type": "contact_information",
+          "disabled": true,
           "settings": {
             "block_width": 25,
             "heading": "About",
@@ -107,6 +123,7 @@
         }
       },
       "block_order": [
+        "image_text_iNQCC4",
         "menu_DEKGYP",
         "menu_8M9mLe",
         "menu_4eCrBB",
