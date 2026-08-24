@@ -6927,3 +6927,29 @@ shopify-account::part(dialog)::backdrop {
  background-color: #f2ede4 !important; 
 }
 
+.product__bespoke-button {
+  margin-top: 12px;
+}
+
+.product__bespoke-button .btn--full-width {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.product__bespoke-button .btn--outline {
+  background: #f7f4ee;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.product__bespoke-button .btn--outline:hover {
+  background: #1c1c1c;
+  color: #f7f4ee;
+}
