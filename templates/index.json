@@ -248,6 +248,14 @@
             "show_gift_card_recipient": true
           }
         },
+        "bespoke_button_T7M4jH": {
+          "type": "bespoke_button",
+          "settings": {
+            "button_label": "Create Your Bespoke Piece",
+            "button_link": "shopify://pages/bespoke",
+            "button_style": "btn--outline"
+          }
+        },
         "icon_with_text_TxpDa4": {
           "type": "icon-with-text",
           "settings": {
@@ -278,6 +286,7 @@
         "inventory_zebhtk",
         "variant_picker_wmzQGB",
         "buy_buttons_qK3FfU",
+        "bespoke_button_T7M4jH",
         "icon_with_text_TxpDa4",
         "addons_xCU6F9"
       ],
