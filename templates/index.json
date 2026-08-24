@@ -466,8 +466,8 @@
         "button_gdtqjn": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Create Your Bespoke Piece",
+            "button_link": "shopify://pages/bespoke",
             "button_style": "btn--primary"
           }
         }
@@ -482,10 +482,10 @@
       "settings": {
         "container": "full",
         "image": "shopify://shop_images/Untitled_design.png",
-        "overlay_opacity": 70,
+        "overlay_opacity": 10,
         "enable_parallax": false,
         "parallax_direction": "vertical",
-        "color_scheme": "",
+        "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "content_position": "middle-left",
         "content_alignment": "left",
         "image_mobile": "shopify://shop_images/Mobile_banner_kave_2.jpg",
