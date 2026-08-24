@@ -10,7 +10,7 @@
 .product {
   --media-width: 58.5%;
   --product-gap: 3rem;
-  gap: var(--product-gap);
+  /* gap: var(--product-gap); */
 }
 .product--medium {
   --media-width: 50%;
