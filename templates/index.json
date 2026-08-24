@@ -274,7 +274,7 @@
           "type": "addons",
           "settings": {
             "show_share": true,
-            "show_ask_question": true
+            "show_ask_question": false
           }
         }
       },
