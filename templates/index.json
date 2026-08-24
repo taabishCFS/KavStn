@@ -64,7 +64,7 @@
       "custom_css": [
         ".slideshow__text {max-width: 40rem;}"
       ],
-      "name": "t:sections.slideshow.name",
+      "name": "HeroBanner",
       "settings": {
         "container": "full",
         "layout": "standard",
@@ -151,7 +151,7 @@
         "custom_collection_nVW3mw",
         "custom_collection_eBLbBQ"
       ],
-      "name": "Custom Collection Showcase",
+      "name": "Shop By Collection",
       "settings": {
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "eyebrow": "Our Range",
@@ -424,7 +424,7 @@
         "spec_item_jmVFDr",
         "button_x8GRmk"
       ],
-      "name": "Custom Image With Text",
+      "name": "Signature piece",
       "settings": {
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "image": "shopify://shop_images/1s23jphIWZWtNnQju8CXMF-W6PMkuK0zW_w2000.jpg",
@@ -476,7 +476,7 @@
         "text_xwMQ3J",
         "button_gdtqjn"
       ],
-      "name": "t:sections.image-with-text-overlay.name",
+      "name": "Bespoke Banner",
       "settings": {
         "container": "full",
         "image": "shopify://shop_images/Untitled_design.png",
@@ -607,66 +607,6 @@
         "custom_class": ""
       }
     },
-    "image_with_text_overlay_C7Ywnx": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_LBdjwm": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Ready to Begin?"
-          }
-        },
-        "heading_8ryh7f": {
-          "type": "heading",
-          "settings": {
-            "heading": "The right piece change severything",
-            "heading_size": "hd1",
-            "heading_tag": "h2",
-            "heading_highlight_style": "none"
-          }
-        },
-        "text_LEmMHA": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Browse the full collection, or book a complimentary studio consultation to discuss a bespoke commission. We're here to help you find something permanent.</p>",
-            "text_size": "text-base"
-          }
-        },
-        "button_jTp4Ye": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop All Collections",
-            "button_link": "shopify://collections",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_LBdjwm",
-        "heading_8ryh7f",
-        "text_LEmMHA",
-        "button_jTp4Ye"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "body {background-color: #f2ede4 !important;}"
-      ],
-      "name": "t:sections.image-with-text-overlay.name",
-      "settings": {
-        "container": "full",
-        "image": "shopify://shop_images/image-01.jpg",
-        "overlay_opacity": 10,
-        "enable_parallax": true,
-        "parallax_direction": "vertical",
-        "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
-        "content_position": "middle-center",
-        "content_alignment": "center",
-        "image_mobile": "shopify://shop_images/image-02.jpg",
-        "padding_top": 0,
-        "padding_bottom": 10,
-        "custom_class": ""
-      }
-    },
     "slideshow_Y7iTFV": {
       "type": "slideshow",
       "blocks": {
@@ -696,7 +636,7 @@
       "block_order": [
         "slide_pijRFN"
       ],
-      "name": "t:sections.slideshow.name",
+      "name": "LastBanner",
       "settings": {
         "container": "full",
         "layout": "standard",
@@ -819,7 +759,6 @@
     "featured_collection_P98JFR",
     "image_comparison_DLqWAY",
     "featured_blog_UB4YXk",
-    "image_with_text_overlay_C7Ywnx",
     "slideshow_Y7iTFV",
     "multicolumn_QpwPWM"
   ]
