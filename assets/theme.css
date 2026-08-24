@@ -6789,7 +6789,7 @@ shopify-account::part(dialog)::backdrop {
 }
 .footer__bottom {
   --element-gap: 2.4rem;
-  padding-top: 8rem;
+  /* padding-top: 8rem; */
 }
 .footer__bottom-row {
   gap: var(--element-gap);
@@ -6867,7 +6867,7 @@ shopify-account::part(dialog)::backdrop {
     min-height: 5.2rem;
   }
   .footer__bottom {
-    padding-top: 4.8rem;
+    /* padding-top: 4.8rem; */
   }
   .footer-block.has-border:after {
     content: "";
@@ -6897,7 +6897,7 @@ shopify-account::part(dialog)::backdrop {
     width: 100%;
   }
   .footer__bottom {
-    padding-top: 2.4rem;
+    /* padding-top: 2.4rem; */
   }
   .footer__bottom-row {
     flex-direction: column;
