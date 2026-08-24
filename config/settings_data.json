@@ -60,7 +60,7 @@
     "collection_card_show_product_count": true,
     "blog_cards_image_ratio": "adapt",
     "color_swatch_trigger": "Color",
-    "swatch_list": "Red:  #ce9b80\nBeige: #b8ae9d\nSilver: #8c8b84",
+    "swatch_list": "Red:#ce9b80\nBeige:#b8ae9d\nSilver:#8c8b84",
     "cart_type": "drawer",
     "free_shipping_minimum_amount": "800",
     "social_facebook_link": "https://www.facebook.com/",
