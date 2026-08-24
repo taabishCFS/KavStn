@@ -135,7 +135,21 @@
                 </div>
               </div>
             </div>
-            
+            {% comment %} {% when 'bespoke_button' %} {% endcomment %}
+      {% if section.settings.button_label != blank %}
+        <div class="product__bespoke-button block" {{ section.shopify_attributes }}>
+          <a
+            {% if section.settings.button_link != blank %}
+              href="{{ section.settings.button_link }}"
+            {% else %}
+              role="link" aria-disabled="true"
+            {% endif %}
+            class="btn btn--full-width {{ section.settings.button_style }}"
+          >
+            {{- section.settings.button_label -}}
+          </a>
+        </div>
+      {% endif %}
           </div>
         </div>
       {%- endif -%}
