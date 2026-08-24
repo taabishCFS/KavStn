@@ -59,6 +59,8 @@
     "collection_card_style": "style-1",
     "collection_card_show_product_count": true,
     "blog_cards_image_ratio": "adapt",
+    "color_swatch_trigger": "Color",
+    "swatch_list": "Red:  #ce9b80\nBeige: #b8ae9d\nSilver: #8c8b84",
     "cart_type": "drawer",
     "free_shipping_minimum_amount": "800",
     "social_facebook_link": "https://www.facebook.com/",
@@ -94,7 +96,7 @@
       "sticky-atc-bar": {
         "type": "sticky-atc-bar",
         "custom_css": [
-          ".sticky-atc-bar{background: #f2ede4; }"
+          ".sticky-atc-bar {background: #f2ede4;}"
         ],
         "settings": {
           "container": "full",
