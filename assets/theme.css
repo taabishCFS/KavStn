@@ -6935,6 +6935,7 @@ shopify-account::part(dialog)::backdrop {
   display: block;
   width: 100%;
   text-align: center;
+  display: flex;
 }
 
 .product__bespoke-button .btn--outline {
