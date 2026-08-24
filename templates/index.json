@@ -350,7 +350,7 @@
       "settings": {
         "eyebrow": "Material Explorer",
         "heading": "Choose Your Stone",
-        "request_samples_text": "Request samples",
+        "request_samples_text": "",
         "request_samples_link": ""
       }
     },
