@@ -186,7 +186,7 @@
         "pcard_image_ratio": "",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "show_all_button_on_top": true,
+        "show_all_button_on_top": false,
         "button_label": "View Dining",
         "button_style": "btn--underline",
         "padding_top": 50,
