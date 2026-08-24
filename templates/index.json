@@ -186,9 +186,9 @@
         "pcard_image_ratio": "",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "show_all_button_on_top": false,
-        "button_label": "",
-        "button_style": "btn--primary",
+        "show_all_button_on_top": true,
+        "button_label": "View Dining",
+        "button_style": "btn--underline",
         "padding_top": 50,
         "padding_bottom": 50,
         "show_section_divider": false,
@@ -309,7 +309,6 @@
             "hardness": "3-4 Mohs",
             "finish": "Polished or Honed",
             "main_image": "shopify://shop_images/1HYXbHAQGEm-Ix26sHSrVww7VGUCZ-tqy_w2000.jpg",
-            "btn_thumbnail": "shopify://shop_images/Biege-Travertine.jpg",
             "shop_link": "",
             "shop_label": "Shop pieces"
           }
@@ -323,7 +322,7 @@
             "hardness": "6-7 Mohs",
             "finish": "Polished or Honed",
             "main_image": "shopify://shop_images/151lTCjDNQdO9yhvTR0jWWJ1LonVdwsvy_w2000.jpg",
-            "btn_thumbnail": "shopify://shop_images/Silver-Travertine.jpg",
+            "btn_thumbnail": "shopify://shop_images/silver-travertine.jpg",
             "shop_link": "",
             "shop_label": "Shop pieces"
           }
@@ -337,7 +336,6 @@
             "hardness": "3-4 Mohs",
             "finish": "Honed or Filled",
             "main_image": "shopify://shop_images/1s23jphIWZWtNnQju8CXMF-W6PMkuK0zW_w2000.jpg",
-            "btn_thumbnail": "shopify://shop_images/Red-Travertine.jpg",
             "shop_link": "",
             "shop_label": "Shop pieces"
           }
