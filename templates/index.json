@@ -490,7 +490,7 @@
         "container": "full",
         "image": "shopify://shop_images/Untitled_design.png",
         "overlay_opacity": 10,
-        "enable_parallax": false,
+        "enable_parallax": true,
         "parallax_direction": "vertical",
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "content_position": "middle-left",
