@@ -17,9 +17,138 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_with_text_MACqcW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VzieXD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Beige Travertine",
+            "heading_size": "hd1",
+            "heading_tag": "h2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_JbrfJX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VzieXD",
+        "text_JbrfJX"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "image_with_text_AYKda4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3QEiAp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "hd1",
+            "heading_tag": "h2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_3h8ktV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3QEiAp",
+        "text_3h8ktV"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "image_with_text_g3EtEY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HUp94t": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "hd1",
+            "heading_tag": "h2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_Ac49LB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HUp94t",
+        "text_Ac49LB"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_MACqcW",
+    "image_with_text_AYKda4",
+    "image_with_text_g3EtEY"
   ]
 }
