@@ -562,7 +562,7 @@
       ],
       "name": "t:sections.image-comparison.presets.name",
       "settings": {
-        "container": "fixed",
+        "container": "small",
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "header_layout": "vertical",
         "heading": "",
