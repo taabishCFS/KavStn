@@ -46,6 +46,7 @@
       "settings": {
         "section_color_scheme": "",
         "color_scheme": "",
+        "image": "shopify://shop_images/3_bc900a94-f012-411e-9121-9b20bad7e56e.jpg",
         "image_height": "adapt",
         "layout": "image_first",
         "desktop_content_position": "center",
@@ -66,7 +67,7 @@
         "heading_3QEiAp": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Red Travertine",
             "heading_size": "hd1",
             "heading_tag": "h2",
             "heading_highlight_style": "none"
@@ -88,6 +89,7 @@
       "settings": {
         "section_color_scheme": "",
         "color_scheme": "",
+        "image": "shopify://shop_images/7_723cc93a-4b21-4c1e-b8c3-3d70c828164f.jpg",
         "image_height": "adapt",
         "layout": "text_first",
         "desktop_content_position": "center",
@@ -108,7 +110,7 @@
         "heading_HUp94t": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Silver Travertine",
             "heading_size": "hd1",
             "heading_tag": "h2",
             "heading_highlight_style": "none"
@@ -130,6 +132,7 @@
       "settings": {
         "section_color_scheme": "",
         "color_scheme": "",
+        "image": "shopify://shop_images/7_ecf635b9-0ad0-49c4-84f3-d402b063fe0e.jpg",
         "image_height": "adapt",
         "layout": "image_first",
         "desktop_content_position": "center",
