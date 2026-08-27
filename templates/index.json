@@ -365,6 +365,41 @@
         "request_samples_link": ""
       }
     },
+    "featured_collection_k3A7Bf": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "header_layout": "vertical",
+        "heading": "Singature Pieces",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "show_collection_description": false,
+        "collection": "",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "enable_slider": true,
+        "controls_position": "inside",
+        "pcard_image_ratio": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_style": "btn--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
     "custom_image_with_text_NRt4Tj": {
       "type": "custom-image-with-text",
       "blocks": {
@@ -765,6 +800,7 @@
     "featured_collection_jMEVxm",
     "featured_product_6Keyif",
     "material_explorer_wNhBVF",
+    "featured_collection_k3A7Bf",
     "custom_image_with_text_NRt4Tj",
     "image_with_text_overlay_qhHPBn",
     "featured_collection_P98JFR",
