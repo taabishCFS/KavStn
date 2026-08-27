@@ -318,6 +318,7 @@
             "hardness": "3-4 Mohs",
             "finish": "Polished or Honed",
             "main_image": "shopify://shop_images/1HYXbHAQGEm-Ix26sHSrVww7VGUCZ-tqy_w2000.jpg",
+            "btn_thumbnail": "shopify://shop_images/beige-travertine.png",
             "shop_link": "",
             "shop_label": "Shop pieces"
           }
@@ -345,6 +346,7 @@
             "hardness": "3-4 Mohs",
             "finish": "Honed or Filled",
             "main_image": "shopify://shop_images/1s23jphIWZWtNnQju8CXMF-W6PMkuK0zW_w2000.jpg",
+            "btn_thumbnail": "shopify://shop_images/red-travertine.png",
             "shop_link": "",
             "shop_label": "Shop pieces"
           }
