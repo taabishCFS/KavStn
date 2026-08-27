@@ -531,7 +531,7 @@
         "enable_parallax": true,
         "parallax_direction": "vertical",
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
-        "content_position": "middle-left",
+        "content_position": "middle-center",
         "content_alignment": "left",
         "image_mobile": "shopify://shop_images/Mobile_banner_kave_2.jpg",
         "padding_top": 0,
@@ -769,7 +769,7 @@
       "settings": {
         "container": "full",
         "layout": "standard",
-        "slide_height": "adapt",
+        "slide_height": "small",
         "show_dots": true,
         "autoplay": false,
         "autoplay_delay": 3,
