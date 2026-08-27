@@ -563,7 +563,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/CRAFT.png",
+            "image_width": "full",
             "title": "02. CRAFT",
             "heading_size": "h4",
             "heading_tag": "h3",
@@ -579,7 +580,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/Install.png",
+            "image_width": "full",
             "title": "03. INSTALL",
             "heading_size": "h4",
             "heading_tag": "h3",
