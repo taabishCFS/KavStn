@@ -367,7 +367,7 @@
     },
     "featured_collection_k3A7Bf": {
       "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
+      "name": "Signature pieces",
       "settings": {
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "header_layout": "vertical",
@@ -470,6 +470,7 @@
         "spec_item_jmVFDr",
         "button_x8GRmk"
       ],
+      "disabled": true,
       "name": "Signature piece",
       "settings": {
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
