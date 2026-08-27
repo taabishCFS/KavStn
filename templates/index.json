@@ -546,7 +546,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/SELECT.png",
+            "image_width": "full",
             "title": "01. SELECT",
             "heading_size": "h4",
             "heading_tag": "h3",
