@@ -607,7 +607,7 @@
         "description": "",
         "text_size": "text-base",
         "column_alignment": "left",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_gap": "large",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
