@@ -239,6 +239,59 @@
         "custom_class": ""
       }
     },
+    "material_explorer_hUmW6V": {
+      "type": "material-explorer",
+      "blocks": {
+        "stone_hPNFg6": {
+          "type": "stone",
+          "settings": {
+            "name": "Calacatta Marble",
+            "location": "Apuan Alps, Italy",
+            "description": "<p>Prized for its luminous white ground threaded with bold gold and grey veining. Every slab is a one-of-a-kind geological painting.</p>",
+            "hardness": "3-4 Mohs",
+            "finish": "Polished or Honed",
+            "shop_link": "",
+            "shop_label": "Shop pieces"
+          }
+        },
+        "stone_HzCYka": {
+          "type": "stone",
+          "settings": {
+            "name": "Black Granite",
+            "location": "Rajasthan, India",
+            "description": "<p>Prized for its luminous white ground threaded with bold gold and grey veining. Every slab is a one-of-a-kind geological painting.</p>",
+            "hardness": "6-7 Mohs",
+            "finish": "Polished or Honed",
+            "shop_link": "",
+            "shop_label": "Shop pieces"
+          }
+        },
+        "stone_Qdhxz7": {
+          "type": "stone",
+          "settings": {
+            "name": "Roman Travertine",
+            "location": "Tivoli, Italy",
+            "description": "<p>Prized for its luminous white ground threaded with bold gold and grey veining. Every slab is a one-of-a-kind geological painting.</p>",
+            "hardness": "3-4 Mohs",
+            "finish": "Honed or Filled",
+            "shop_link": "",
+            "shop_label": "Shop pieces"
+          }
+        }
+      },
+      "block_order": [
+        "stone_hPNFg6",
+        "stone_HzCYka",
+        "stone_Qdhxz7"
+      ],
+      "name": "Material Explorer",
+      "settings": {
+        "eyebrow": "Material Explorer",
+        "heading": "Choose Your Stone",
+        "request_samples_text": "Request samples",
+        "request_samples_link": ""
+      }
+    },
     "contact_form_EfpTLP": {
       "type": "contact-form",
       "blocks": {
@@ -281,6 +334,7 @@
     "image_with_text_overlay_jKXxkT",
     "layered_images_with_text_AgNWmE",
     "multicolumn_Djg7V3",
+    "material_explorer_hUmW6V",
     "contact_form_EfpTLP"
   ]
 }
