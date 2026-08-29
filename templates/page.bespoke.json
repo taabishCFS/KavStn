@@ -184,7 +184,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/RefineDetail.png",
+            "image_width": "full",
             "title": "03. Refine Every Detail",
             "heading_size": "h4",
             "heading_tag": "h3",
@@ -200,7 +201,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/CraftDelivered.png",
+            "image_width": "full",
             "title": "04. Crafted And Delivered",
             "heading_size": "h4",
             "heading_tag": "h3",
