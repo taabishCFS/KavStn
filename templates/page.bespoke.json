@@ -286,10 +286,10 @@
       ],
       "name": "Material Explorer",
       "settings": {
-        "eyebrow": "Material Explorer",
+        "eyebrow": "",
         "heading": "Choose Your Stone",
-        "request_samples_text": "Request samples",
-        "request_samples_link": ""
+        "request_samples_text": "Explore Materials",
+        "request_samples_link": "shopify://pages/materials"
       }
     },
     "contact_form_EfpTLP": {
