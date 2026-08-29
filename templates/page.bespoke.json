@@ -245,7 +245,7 @@
         "stone_hPNFg6": {
           "type": "stone",
           "settings": {
-            "name": "Calacatta Marble",
+            "name": "Beige Travertine",
             "location": "Apuan Alps, Italy",
             "description": "<p>Prized for its luminous white ground threaded with bold gold and grey veining. Every slab is a one-of-a-kind geological painting.</p>",
             "hardness": "3-4 Mohs",
@@ -257,7 +257,7 @@
         "stone_HzCYka": {
           "type": "stone",
           "settings": {
-            "name": "Black Granite",
+            "name": "Red Travertine",
             "location": "Rajasthan, India",
             "description": "<p>Prized for its luminous white ground threaded with bold gold and grey veining. Every slab is a one-of-a-kind geological painting.</p>",
             "hardness": "6-7 Mohs",
@@ -269,7 +269,7 @@
         "stone_Qdhxz7": {
           "type": "stone",
           "settings": {
-            "name": "Roman Travertine",
+            "name": "Silver Travertine",
             "location": "Tivoli, Italy",
             "description": "<p>Prized for its luminous white ground threaded with bold gold and grey veining. Every slab is a one-of-a-kind geological painting.</p>",
             "hardness": "3-4 Mohs",
