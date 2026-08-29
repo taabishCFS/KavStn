@@ -150,7 +150,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/Consultation.png",
+            "image_width": "full",
             "title": "01. Consulation",
             "heading_size": "h4",
             "heading_tag": "h3",
@@ -166,7 +167,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/SelectStone_a2065812-2ed7-4581-8dea-90bba3157617.png",
+            "image_width": "full",
             "title": "02. Select Your Stone",
             "heading_size": "h4",
             "heading_tag": "h3",
