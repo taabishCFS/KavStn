@@ -73,7 +73,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image": "shopify://shop_images/BeigeMaterial01.png",
+            "image": "shopify://shop_images/BeigeMaterial02.png",
             "image_width": "full",
             "title": "01. Beige Travertine",
             "heading_size": "h4",
@@ -90,7 +90,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/RedMaterial02.png",
+            "image_width": "full",
             "title": "02. Red Travertine",
             "heading_size": "h4",
             "heading_tag": "h3",
@@ -106,7 +107,8 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image": "shopify://shop_images/SilverMaterial02.png",
+            "image_width": "full",
             "title": "03. Silver Travertine",
             "heading_size": "h4",
             "heading_tag": "h3",
