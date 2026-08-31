@@ -31,7 +31,7 @@
         "heading_WzBEzJ": {
           "type": "heading",
           "settings": {
-            "heading": "Three Stones Enless Charachters",
+            "heading": "Three Stones Endless Charachters",
             "heading_size": "hd2",
             "heading_tag": "h2",
             "heading_highlight_style": "none"
@@ -73,7 +73,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image_width": "medium",
+            "image_width": "full",
             "title": "01. Beige Travertine",
             "heading_size": "h4",
             "heading_tag": "h3",
