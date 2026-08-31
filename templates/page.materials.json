@@ -82,7 +82,7 @@
             "text_size": "text-base",
             "button_label": "Shop By Material",
             "button_style": "btn--underline",
-            "button_link": "",
+            "button_link": "shopify://collections",
             "mobile_layout": "inherit"
           }
         },
@@ -99,7 +99,7 @@
             "text_size": "text-base",
             "button_label": "Shop By Material",
             "button_style": "btn--underline",
-            "button_link": "",
+            "button_link": "shopify://collections",
             "mobile_layout": "inherit"
           }
         },
@@ -116,7 +116,7 @@
             "text_size": "text-base",
             "button_label": "Shop By Material",
             "button_style": "btn--underline",
-            "button_link": "",
+            "button_link": "shopify://collections",
             "mobile_layout": "inherit"
           }
         }
