@@ -74,12 +74,12 @@
           "settings": {
             "show_image": true,
             "image_width": "medium",
-            "title": "Column",
+            "title": "01. Beige Travertine",
             "heading_size": "h4",
             "heading_tag": "h3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Warm · Quiet · Timeless</p>",
             "text_size": "text-base",
-            "button_label": "Button label",
+            "button_label": "View material",
             "button_style": "btn--underline",
             "button_link": "",
             "mobile_layout": "inherit"
@@ -90,12 +90,12 @@
           "settings": {
             "show_image": true,
             "image_width": "medium",
-            "title": "Column",
+            "title": "02. Red Travertine",
             "heading_size": "h4",
             "heading_tag": "h3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Bold · Earthy · Expressive</p>",
             "text_size": "text-base",
-            "button_label": "Button label",
+            "button_label": "View material",
             "button_style": "btn--underline",
             "button_link": "",
             "mobile_layout": "inherit"
@@ -106,12 +106,12 @@
           "settings": {
             "show_image": true,
             "image_width": "medium",
-            "title": "Column",
+            "title": "03. Silver Travertine",
             "heading_size": "h4",
             "heading_tag": "h3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Cool · Layered · Architectural</p>",
             "text_size": "text-base",
-            "button_label": "Button label",
+            "button_label": "View material",
             "button_style": "btn--underline",
             "button_link": "",
             "mobile_layout": "inherit"
