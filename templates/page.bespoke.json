@@ -295,10 +295,11 @@
             "mobile_layout": "inherit"
           }
         },
-        "column_incCiN": {
+        "column_WReLX8": {
           "type": "column",
           "settings": {
             "show_image": true,
+            "image": "shopify://shop_images/remarkableImg1.png",
             "image_width": "full",
             "title": "",
             "heading_size": "h4",
@@ -311,10 +312,11 @@
             "mobile_layout": "inherit"
           }
         },
-        "column_tNkPUC": {
+        "column_Xngym4": {
           "type": "column",
           "settings": {
             "show_image": true,
+            "image": "shopify://shop_images/remarkableImg1.png",
             "image_width": "full",
             "title": "",
             "heading_size": "h4",
@@ -330,8 +332,8 @@
       },
       "block_order": [
         "column_fd9djx",
-        "column_incCiN",
-        "column_tNkPUC"
+        "column_WReLX8",
+        "column_Xngym4"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
