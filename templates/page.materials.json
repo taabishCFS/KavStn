@@ -161,15 +161,15 @@
         "text_k6ax7Y": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Travertine is shaped by mineral-rich waters over thousands of years, creating unique tones, textures and natural movement. We personally select each slab for its character and structure, then hand finish every piece.</p>",
             "text_size": "text-base"
           }
         },
         "button_i797gU": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Exlpore Bespoke",
+            "button_link": "shopify://pages/bespoke",
             "button_style": "btn--primary"
           }
         }
