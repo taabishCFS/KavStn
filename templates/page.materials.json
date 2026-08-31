@@ -133,7 +133,7 @@
         "subheading": "",
         "description": "",
         "text_size": "text-base",
-        "column_alignment": "left",
+        "column_alignment": "center",
         "columns_desktop": 3,
         "column_gap": "large",
         "columns_mobile": "1",
