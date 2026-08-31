@@ -305,16 +305,10 @@
     "image_with_text_overlay_YnJWVX": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_fKE3XD": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Add a tagline"
-          }
-        },
         "heading_rCTixB": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text overlay",
+            "heading": "Cut, Shaped & Finished By Hand",
             "heading_size": "hd1",
             "heading_tag": "h2",
             "heading_highlight_style": "none"
@@ -323,13 +317,12 @@
         "text_gidNnd": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. <br>Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Generation of stone craftsmanship brought to life in every piece</p>",
             "text_size": "text-base"
           }
         }
       },
       "block_order": [
-        "subheading_fKE3XD",
         "heading_rCTixB",
         "text_gidNnd"
       ],
@@ -338,7 +331,7 @@
         "container": "full",
         "image": "shopify://shop_images/BesopkePageBanner.png",
         "overlay_opacity": 30,
-        "enable_parallax": true,
+        "enable_parallax": false,
         "parallax_direction": "vertical",
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "content_position": "middle-right",
