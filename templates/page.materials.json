@@ -25,14 +25,14 @@
         "subheading_B3tYT7": {
           "type": "subheading",
           "settings": {
-            "subheading": "Add a tagline"
+            "subheading": "Our Materials"
           }
         },
         "heading_WzBEzJ": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text overlay",
-            "heading_size": "hd1",
+            "heading": "Three Stones Enless Charachters",
+            "heading_size": "hd2",
             "heading_tag": "h2",
             "heading_highlight_style": "none"
           }
@@ -40,7 +40,7 @@
         "text_kUBwdb": {
           "type": "text",
           "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. <br>Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text": "<p>Our Furniture is crafted with three natural travertines each with its own story, stone and timeless presence. No two pieces are ever the same</p>",
             "text_size": "text-base"
           }
         }
@@ -57,9 +57,10 @@
         "overlay_opacity": 20,
         "enable_parallax": false,
         "parallax_direction": "vertical",
-        "color_scheme": "",
+        "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "content_position": "middle-left",
         "content_alignment": "left",
+        "image_mobile": "shopify://shop_images/MainMaterialHeroMob.png",
         "padding_top": 0,
         "padding_bottom": 0,
         "custom_class": ""
