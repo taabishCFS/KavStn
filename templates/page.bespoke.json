@@ -343,8 +343,8 @@
         "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
         "content_position": "middle-right",
         "content_alignment": "center",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "custom_class": ""
       }
     },
