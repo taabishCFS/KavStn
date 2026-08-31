@@ -299,7 +299,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image": "shopify://shop_images/ramarkeableImg2.png",
+            "image": "shopify://shop_images/ramarkeableImg02.png",
             "image_width": "full",
             "title": "",
             "heading_size": "h4",
