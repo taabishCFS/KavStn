@@ -80,7 +80,7 @@
             "heading_tag": "h3",
             "text": "<p>Warm · Quiet · Timeless</p>",
             "text_size": "text-base",
-            "button_label": "View material",
+            "button_label": "Shop By Material",
             "button_style": "btn--underline",
             "button_link": "",
             "mobile_layout": "inherit"
@@ -96,7 +96,7 @@
             "heading_tag": "h3",
             "text": "<p>Bold · Earthy · Expressive</p>",
             "text_size": "text-base",
-            "button_label": "View material",
+            "button_label": "Shop By Material",
             "button_style": "btn--underline",
             "button_link": "",
             "mobile_layout": "inherit"
@@ -112,7 +112,7 @@
             "heading_tag": "h3",
             "text": "<p>Cool · Layered · Architectural</p>",
             "text_size": "text-base",
-            "button_label": "View material",
+            "button_label": "Shop By Material",
             "button_style": "btn--underline",
             "button_link": "",
             "mobile_layout": "inherit"
