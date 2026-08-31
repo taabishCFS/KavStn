@@ -46,7 +46,7 @@
       "settings": {
         "section_color_scheme": "",
         "color_scheme": "",
-        "image": "shopify://shop_images/BeigeMaterail.png",
+        "image": "shopify://shop_images/BeigeRawMaterial.png",
         "image_height": "adapt",
         "layout": "image_first",
         "desktop_content_position": "center",
@@ -89,7 +89,7 @@
       "settings": {
         "section_color_scheme": "",
         "color_scheme": "",
-        "image": "shopify://shop_images/7_723cc93a-4b21-4c1e-b8c3-3d70c828164f.jpg",
+        "image": "shopify://shop_images/RedRawMaterial.png",
         "image_height": "adapt",
         "layout": "text_first",
         "desktop_content_position": "center",
@@ -132,7 +132,7 @@
       "settings": {
         "section_color_scheme": "",
         "color_scheme": "",
-        "image": "shopify://shop_images/7_ecf635b9-0ad0-49c4-84f3-d402b063fe0e.jpg",
+        "image": "shopify://shop_images/SilverRawMaterial.png",
         "image_height": "adapt",
         "layout": "image_first",
         "desktop_content_position": "center",
