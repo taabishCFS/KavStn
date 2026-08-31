@@ -76,73 +76,6 @@
         "custom_class": ""
       }
     },
-    "layered_images_with_text_AgNWmE": {
-      "type": "layered-images-with-text",
-      "blocks": {
-        "image_KCamb4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/7_ecf635b9-0ad0-49c4-84f3-d402b063fe0e.jpg",
-            "custom_classes": ""
-          }
-        },
-        "image_68iGX3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3_1261aff7-b3d2-45e0-a21f-118fa53c16d2.jpg",
-            "custom_classes": ""
-          }
-        },
-        "image_qDPwwk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/7_723cc93a-4b21-4c1e-b8c3-3d70c828164f.jpg",
-            "custom_classes": ""
-          }
-        },
-        "image_ccTQnr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/7_43950e91-0a52-4f71-a486-e2ef202f1760.jpg",
-            "custom_classes": ""
-          }
-        },
-        "image_yPHb69": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/7_d15a8806-bb13-4797-959a-4df1b0050fce.jpg",
-            "custom_classes": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_KCamb4",
-        "image_68iGX3",
-        "image_qDPwwk",
-        "image_ccTQnr",
-        "image_yPHb69"
-      ],
-      "disabled": true,
-      "name": "t:sections.layered-images-with-text.name",
-      "settings": {
-        "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
-        "heading": "YOUR SPACE. YOUR STONE. YOUR DESIGN.",
-        "heading_size": "h1",
-        "heading_tag": "h1",
-        "heading_highlight_style": "none",
-        "subheading": "",
-        "description": "<p>From the first idea to the final detail, create furniture made exclusively for you</p>",
-        "description_size": "text-base",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "btn--primary",
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed",
-        "custom_class": ""
-      }
-    },
     "multicolumn_Djg7V3": {
       "type": "multicolumn",
       "blocks": {
@@ -342,6 +275,85 @@
         "custom_class": ""
       }
     },
+    "multicolumn_gXwpPe": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fd9djx": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_incCiN": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_tNkPUC": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_fd9djx",
+        "column_incCiN",
+        "column_tNkPUC"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Multicolumn",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "left",
+        "columns_desktop": 3,
+        "column_gap": "large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
     "contact_form_EfpTLP": {
       "type": "contact-form",
       "blocks": {
@@ -382,10 +394,10 @@
   "order": [
     "main",
     "image_with_text_overlay_jKXxkT",
-    "layered_images_with_text_AgNWmE",
     "multicolumn_Djg7V3",
     "material_explorer_hUmW6V",
     "image_with_text_overlay_YnJWVX",
+    "multicolumn_gXwpPe",
     "contact_form_EfpTLP"
   ]
 }
