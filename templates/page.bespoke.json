@@ -282,6 +282,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
+            "image": "shopify://shop_images/remarkableImg1.png",
             "image_width": "full",
             "title": "",
             "heading_size": "h4",
