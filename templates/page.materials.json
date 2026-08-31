@@ -11,11 +11,189 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "heading_size": "h1",
         "heading_tag": "h1",
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "image_with_text_overlay_aqVmp4": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_B3tYT7": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add a tagline"
+          }
+        },
+        "heading_WzBEzJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "hd1",
+            "heading_tag": "h2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_kUBwdb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. <br>Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_B3tYT7",
+        "heading_WzBEzJ",
+        "text_kUBwdb"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "container": "full",
+        "image": "shopify://shop_images/MainMaterialHero_21545fb3-f2ce-488a-827a-25c9bc7c30eb.png",
+        "overlay_opacity": 20,
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "color_scheme": "",
+        "content_position": "middle-left",
+        "content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
+      }
+    },
+    "multicolumn_yy6ikP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YBrHrJ": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "medium",
+            "title": "Column",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base",
+            "button_label": "Button label",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_kpTkNN": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "medium",
+            "title": "Column",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base",
+            "button_label": "Button label",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_TT6Ht6": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image_width": "medium",
+            "title": "Column",
+            "heading_size": "h4",
+            "heading_tag": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base",
+            "button_label": "Button label",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_YBrHrJ",
+        "column_kpTkNN",
+        "column_TT6Ht6"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Multicolumn",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "left",
+        "columns_desktop": 3,
+        "column_gap": "large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
+      }
+    },
+    "image_with_text_6ypDLd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yqRM9G": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "hd1",
+            "heading_tag": "h2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_k6ax7Y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_i797gU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yqRM9G",
+        "text_k6ax7Y",
+        "button_i797gU"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image": "shopify://shop_images/MainMaterialHero.png",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "custom_class": ""
       }
     },
     "image_with_text_MACqcW": {
@@ -42,6 +220,7 @@
         "heading_VzieXD",
         "text_JbrfJX"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "section_color_scheme": "",
@@ -85,6 +264,7 @@
         "heading_3QEiAp",
         "text_3h8ktV"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "section_color_scheme": "",
@@ -128,6 +308,7 @@
         "heading_HUp94t",
         "text_Ac49LB"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "section_color_scheme": "",
@@ -150,6 +331,9 @@
   },
   "order": [
     "main",
+    "image_with_text_overlay_aqVmp4",
+    "multicolumn_yy6ikP",
+    "image_with_text_6ypDLd",
     "image_with_text_MACqcW",
     "image_with_text_AYKda4",
     "image_with_text_g3EtEY"
