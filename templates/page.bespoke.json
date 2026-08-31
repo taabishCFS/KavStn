@@ -302,6 +302,52 @@
         "request_samples_link": "shopify://pages/materials"
       }
     },
+    "image_with_text_overlay_YnJWVX": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_fKE3XD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add a tagline"
+          }
+        },
+        "heading_rCTixB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "hd1",
+            "heading_tag": "h2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_gidNnd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. <br>Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_fKE3XD",
+        "heading_rCTixB",
+        "text_gidNnd"
+      ],
+      "name": "t:sections.image-with-text-overlay.name",
+      "settings": {
+        "container": "full",
+        "image": "shopify://shop_images/BesopkePageBanner.png",
+        "overlay_opacity": 30,
+        "enable_parallax": true,
+        "parallax_direction": "vertical",
+        "color_scheme": "scheme-1e239f70-020d-4c3c-8a9f-b5b4aaafafc8",
+        "content_position": "middle-right",
+        "content_alignment": "center",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
+    },
     "contact_form_EfpTLP": {
       "type": "contact-form",
       "blocks": {
@@ -345,6 +391,7 @@
     "layered_images_with_text_AgNWmE",
     "multicolumn_Djg7V3",
     "material_explorer_hUmW6V",
+    "image_with_text_overlay_YnJWVX",
     "contact_form_EfpTLP"
   ]
 }
