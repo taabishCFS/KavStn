@@ -73,7 +73,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image": "shopify://shop_images/BeigeMaterial02.png",
+            "image": "shopify://shop_images/Ellipse_Tables-2-02.png",
             "image_width": "full",
             "title": "01. Beige Travertine",
             "heading_size": "h4",
@@ -90,7 +90,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image": "shopify://shop_images/RedMaterial02.png",
+            "image": "shopify://shop_images/Ellipse-Tables-1-Red-Travertine-02.png",
             "image_width": "full",
             "title": "02. Red Travertine",
             "heading_size": "h4",
@@ -107,7 +107,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
-            "image": "shopify://shop_images/SilverMaterial02.png",
+            "image": "shopify://shop_images/Ellipse_Tables-2-06_2.png",
             "image_width": "full",
             "title": "03. Silver Travertine",
             "heading_size": "h4",
